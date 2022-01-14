@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>MYfirstgame</title>
+    <link rel="stylesheet" href="stylies.css">
+</head>
+<body>
+<div id="maingame">
+    <div id="game-info" >
+        <table id="resources">
+            <tr>
+                <td></td>
+                <td>Люди</td>
+                <td>Еда</td>
+                <td>Камень</td>
+                <td>Дерево</td>
+            </tr>
+            <tr>
+                <td>Колличество</td>
+                <td id="numberofpeoples">100</td>
+                <td id="numberoffood">3000</td>
+                <td id="numberofstone">100</td>
+                <td id="numberofwood">100</td>
+            </tr>
+            <tr>
+                <td>Прирост</td>
+                <td id="growingofpeoples">0</td>
+                <td id="growingoffood">0</td>
+                <td id="growingofstone">0</td>
+                <td id="growingofwood">0</td>
+            </tr>
+        </table>
+
+        <table id="buildings">
+            <tr>
+                <td></td>
+                <td>Дом местных жителей</td>
+                <td>Хижина лекаря</td>
+                <td>Хижина шамана</td>
+                <td>Хижина изобретателя</td>
+                <td>Ферма</td>
+                <td>Шахта</td>
+                <td>Лесопилка</td>
+            </tr>
+            <tr>
+                <td>Колличество</td>
+                <td id="numberofhouses">0</td>
+                <td id="numberofhealer">0</td>
+                <td id="numberofshaman">0</td>
+                <td id="numberofengineer">0</td>
+                <td id="numberoffarm">0</td>
+                <td id="numberofmines">0</td>
+                <td id="numberofsawmills">0</td>
+            </tr>
+        </table>
+
+        <table id="info">
+            <tr>
+                <td>Информация</td>
+                <td>
+                    <div style="font:italic 20px bold; color: sandybrown;">Местный жители появляются из их домов, по 3
+                        штуки каждый ход. У вас в распоряжении 100 дерева, 100 камня и 3000 пищи. Число жителей 100
+                        человек. Каждый ход вы получаете ресурсы и в конце хода теряете пищу равной кол-ву жителей.
+                        Фермы пополняют колличество пищи. Если колличество пищи упадёт меньше нуля, вы проиграете.<br> И
+                        мой вам совет, не оставляйте жителей, без присмотра
+                    </div>
+                    <br>
+                    Условие попеды: жителей больше 500
+                    <button>Скрыть</button>
+                </td>
+
+            </tr>
+        </table>
+        <table id="infotobuild">
+            <tr>
+                <td>Название <br> здания</td>
+                <td>Дом</td>
+                <td>Хижина лекаря</td>
+                <td>Хижина шамана</td>
+                <td>Хижина изобретателя</td>
+                <td>Ферма</td>
+                <td>Шахта</td>
+                <td>Лесопилка</td>
+            </tr>
+            <tr>
+                <td>Его стоимость</td>
+                <td>10 камня<br>10 дерева</td>
+                <td>20 камня<br>30 дерева</td>
+                <td>25 камня<br>15 дерева</td>
+                <td>20 камня<br>20 дерева</td>
+                <td>10 камня<br>20 дерева</td>
+                <td>20 камня<br>10 дерева</td>
+                <td>10 камня<br>15 дерева</td>
+            </tr>
+            <tr>
+                <td>Его свойства</td>
+                <td>+3 жителя</td>
+                <td>Злейший враг чумы</td>
+                <td>Идеален, когда на улице непогода</td>
+                <td>Ящик кваса и он сделает все</td>
+                <td>Обед по расписанию<br>+5 еды</td>
+                <td>Нужно больше камня<br>+2 камня</td>
+                <td>Природа - мать порядка<br>+4 дерева</td>
+            </tr>
+            <tr>
+                <td>Его название для постройки</td>
+                <td>hous</td>
+                <td>heal</td>
+                <td>drui</td>
+                <td>engi</td>
+                <td>farm</td>
+                <td>mine</td>
+                <td>sawm</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="message">
+        <div id="message-space"><h3>
+
+        </div></h3>
+    </div>
+</div>
+<script src="jscode.js"></script>
+</body>
+</html>
